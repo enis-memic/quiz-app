@@ -4,6 +4,10 @@
     <%= question.quiz_id %>
   </p>
 
+  <% of question.image.attached? %>
+  <%= image_tag question.image, class: "image-fluid" %>
+  <% end %>
+
   <p>
     <strong>Content:</strong>
     <%= question.content %>
